@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>출판사 무제</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+	<link rel="icon" href="images/main-logo.png">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style>
+		body, html {
+			overflow-x: hidden;
+		}
+
+		.slick-track {
+			display: flex;
+		}
+
+		.slick-slide {
+			max-width: 100%;
+			box-sizing: border-box;
+		}
+
+		.main-logo {
+			width: 100%;
+			/* 초기 너비 */
+			transition: width 0.5s ease
+			/* 부드러운 애니메이션 효과 */
+		}
+
+		.main-logo.scrolled {
+			width: 60%;
+			/* 스크롤 시 너비 */
+		}
+	</style>
+
+	<script>
+		window.addEventListener('scroll', function () {
+			const logoContainer = document.querySelector('.main-logo');
+			if (window.pageYOffset > 100) { // 예시: 100px 스크롤 시
+				logoContainer.classList.add('scrolled');
+			} else {
+				logoContainer.classList.remove('scrolled');
+			}
+		});
+	</script>
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
+
+	<div id="header-wrap">
+
+		<div class="top-content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="social-links">
+							<ul>
+								<li>
+									<a href="https://www.youtube.com/@출판사무제MUZE"><i class="fa-brands fa-youtube"></i></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/booksmuze"><i class="fa-brands fa-instagram"></i></a>
+								</li>
+							</ul>
+						</div><!--social-links-->
+					</div>
+					<div class="col-md-6">
+						<div class="right-element">
+							<a href="#" class="user-account for-buy"><i class="icon icon-user"></i><span>Account</span></a>
+							<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
+									$)</span></a>
+
+							<div class="action-menu">
+
+								<div class="search-bar">
+									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+										<i class="icon icon-search"></i>
+									</a>
+									<form role="search" method="get" class="search-box">
+										<input class="search-field text search-input" placeholder="Search" type="search">
+									</form>
+								</div>
+							</div>
+
+						</div><!--top-right-->
+					</div>
+
+				</div>
+			</div>
+		</div><!--top-content-->
+
+		<header id="header">
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-1">
+						<div class="main-logo">
+							<a href="index.html"><img src="images/main-logo.png" alt="logo" class="logo"></a>
+						</div>
+
+					</div>
+
+					<div class="col-md-10">
+
+						<nav id="navbar">
+							<div class="main-menu stellarnav">
+								<ul class="menu-list">
+									<li class="menu-item active"><a href="#quotation">출판사 무제</li>
+									<li class="menu-item has-sub" style="display: none;">
+										<a href="#pages" class="nav-link">Pages</a>
+
+										<ul>
+											<li class="active"><a href="index.html">Home</a></li>
+											<li><a href="index.html">About</a></li>
+											<li><a href="index.html">Styles</a></li>
+											<li><a href="index.html">Blog</a></li>
+											<li><a href="index.html">Post Single</a></li>
+											<li><a href="index.html">Our Store</a></li>
+											<li><a href="index.html">Product Single</a></li>
+											<li><a href="index.html">Contact</a></li>
+											<li><a href="index.html">Thank You</a></li>
+										</ul>
+
+									</li>
+									<li class="menu-item"><a href="#featured-books" class="nav-link">책</a></li>
+									<li class="menu-item"><a href="#popular-books" class="nav-link">굿즈</a></li>
+									<li class="menu-item"><a href="#special-offer" class="nav-link">추천</a></li>
+									<li class="menu-item"><a href="#latest-blog" class="nav-link">소식</a></li>
+								</ul>
+
+								<div class="hamburger">
+									<span class="bar"></span>
+									<span class="bar"></span>
+									<span class="bar"></span>
+								</div>
+
+							</div>
+						</nav>
+
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+	</div><!--header-wrap-->
+
+	<section id="billboard">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<button class="prev slick-arrow">
+						<i class="icon icon-arrow-left"></i>
+					</button>
+
+					<div class="main-slider pattern-overlay mt-5">
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">완주:기록:01</h2>
+								<p>무제의 '듣는 소설 시리즈'는 시각 장애인 독자를 위한 오디오북을 먼저 발간하고 종이책을 이어서 펴내는 독특한 기획의 시리즈 입니다.<br>다른 책들이 시각장애인'도' 읽을 수
+									있었다면 듣는 소설은 비시각 장애인'도' 읽을 수 있도록 만드는 것이 목표입니다.</p>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">View More<i
+											class="icon icon-ns-arrow-right"></i></a>
+								</div>
+							</div><!--banner-content-->
+							<img src="images/content1.png" alt="banner" class="banner-image" width="400">
+						</div><!--slider-item-->
+
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">자매일기</h2>
+								<p>우리는 매일 실망하고 낙담하지만, 그만큼 웃기도 또 가끔은 숨이 넘어가도록 낄낄거리기도 한다. </p>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">View More<i
+											class="icon icon-ns-arrow-right"></i></a>
+								</div>
+							</div><!--banner-content-->
+							<img src="images/자매일기b.png" alt="banner" class="banner-image" width="400">
+						</div><!--slider-item-->
+
+					</div><!--slider-->
+
+					<button class="next slick-arrow">
+						<i class="icon icon-arrow-right"></i>
+					</button>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="quotation" class="align-center" style="background-color: #EFEFEF; padding: 150px 0;" data-aos="fade-up">
+		<div class="inner-content">
+			<h2 class="section-title divider">무제</h2>
+			<blockquote data-aos="fade-up">
+				<q>세상에는 제목이 없는, 이름이 없는, 즉 소외된 것들이 많습니다.둘러보니 그렇습니다. 귀찮은 마음에 세상에 내던진 이름을 다시 회수한다는 마음으로 성실하게 살피고 듣고 기록하겠습니다.</q>
+				<div class="author-name">박정민</div>
+			</blockquote>
+		</div>
+	</section>
+
+	<section id="featured-books" class="py-5 my-5">
+		<div class="container" style="padding: 100px 0;">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>무제의 대표작을 살펴보세요.</span>
+						</div>
+						<h2 class="section-title">'무제'의 책</h2>
+					</div>
+
+					<div class="product-list" data-aos="fade-up">
+						<div class="row">
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="images/첫 여름,완주b.png" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View more</button>
+									</figure>
+									<figcaption>
+										<h3>첫 여름,완주</h3>
+										<span>김금희</span>
+										<div class="item-price">2025.05.08</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="images/자매일기b.png" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View more</button>
+									</figure>
+									<figcaption>
+										<h3>자매일기</h3>
+										<span>박소영, 박수영</span>
+										<div class="item-price">2024.08.30</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="images/살리는 일b.png" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View more</button>
+									</figure>
+									<figcaption>
+										<h3>살리는 일</h3>
+										<span>박소영</span>
+										<div class="item-price">2020.12.15</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="images/사나운 독립b.png" alt="Books" class="product-item">
+									</figure>
+									<figcaption>
+										<h3>사나운 독립</h3>
+										<span>최지현, 서평강, 문유림</span>
+										<div class="item-price">COMMING SOON</div>
+									</figcaption>
+								</div>
+							</div>
+
+						</div><!--ft-books-slider-->
+					</div><!--grid-->
+
+
+				</div><!--inner-content-->
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="btn-wrap align-right">
+						<a href="#" class="btn-accent-arrow">View all products <i class="icon icon-ns-arrow-right"></i></a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="best-selling" class="leaf-pattern-overlay">
+		<div class="corner-pattern-overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+
+				<div class="col-md-8">
+
+					<div class="row">
+
+						<div class="col-md-6">
+							<figure class="products-thumb">
+								<img src="images/첫 여름,완주b.png" alt="book" class="single-image" style="background-color: #EFEFEF;">
+							</figure>
+						</div>
+
+						<div class="col-md-6">
+							<div class="product-entry">
+								<h2 class="section-title divider">베스트셀러</h2>
+
+								<div class="products-content">
+									<div class="author-name">김금희</div>
+									<h3 class="item-title">첫 여름,완주</h3>
+									<p>슬퍼도 무너져도 각자 몫의 완주를 해내는 사람들<br>눈부시게 내려앉는 여름 빛처럼 찾아오는 어떤 평범한 기적</p>
+									<div class="item-price">17,000원</div>
+									<div class="btn-wrap">
+										<a href="#" class="btn-accent-arrow">more <i class="icon icon-ns-arrow-right"></i></a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<!-- / row -->
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="popular-books" class="bookshelf py-5 my-5">
+		<div class="container" style="padding: 100px 0;" >
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>다양한 무제의</span>
+						</div>
+						<h2 class="section-title">굿즈</h2>
+					</div>
+
+					<ul class="tabs">
+						<li data-tab-target="#all-genre" class="active tab">All Genre</li>
+						<li data-tab-target="#Keyring" class="tab">Keyring</li>
+						<li data-tab-target="#stationery" class="tab">Stationery</li>
+						<li data-tab-target="#Accessories" class="tab">Accessories</li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="all-genre" data-tab-content class="active">
+							<div class="row">
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/products1.png" alt="audio book" class="product-item" width="1000">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>첫 여름, 완주 NFC 오디오북 키링</h3>
+											<span>1 color</span>
+											<div class="item-price">25,000원</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/products2-2.png" alt="pen" class="product-item" width="1000">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>[무제 X 엉뚱상] 만년필</h3>
+											<span>2 colors</span>
+											<div class="item-price">70,000원</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/products3.png" alt="note" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>[무제 X 엉뚱상] 노트</h3>
+											<span>1 color</span>
+											<div class="item-price">20,000원</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/products4.png" alt="cap" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>[무제 X 엉뚱상] 모자</h3>
+											<span>1 color</span>
+											<div class="item-price">28,000원</div>
+										</figcaption>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div id="Keyring" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/products1.png" alt="audio book" class="product-item" width="1000">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>첫 여름, 완주 NFC 오디오북 키링</h3>
+											<span>1 color</span>
+											<div class="item-price">25,000원</div>
+										</figcaption>
+									</div>
+								</div>
+
+
+
+							</div>
+						</div>
+
+						<div id="stationery" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/products2-2.png" alt="pen" class="product-item" width="1000">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>[무제 X 엉뚱상] 만년필</h3>
+											<span>2 colors</span>
+											<div class="item-price">70,000원</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/products3.png" alt="note" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>[무제 X 엉뚱상] 노트</h3>
+											<span>1 color</span>
+											<div class="item-price">20,000원</div>
+										</figcaption>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div id="Accessories" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/products4.png" alt="cap" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>[무제 X 엉뚱상] 모자</h3>
+											<span>1 color</span>
+											<div class="item-price">28,000원</div>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+
+						</div><!--inner-tabs-->
+
+					</div>
+				</div>
+	</section>
+
+
+
+	<section id="special-offer" class="bookshelf pb-5 mb-5">
+
+		<div class="section-header align-center">
+			<div class="title">
+				<span>무제의 추천 어떠신가요?</span>
+			</div>
+			<h2 class="section-title">추천 도서</h2>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="inner-content">
+					<div class="product-list" data-aos="fade-up">
+						<div class="grid product-grid">
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="images/첫 여름,완주b.png" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View</button>
+								</figure>
+								<figcaption>
+									<h3>첫 여름,완주</h3>
+									<span>김금희</span>
+									<div class="item-price">17,000</div>
+									<select name="bookShop" id="bookShop">
+										<option value="" disabled selected>구매가능 서점</option>
+										<option value="교보문고">교보문고</option>
+										<option value="예스24">예스24</option>
+										<option value="알라딘">알라딘</option>
+										<option value="영풍문고">영풍문고</option>
+									</select>
+								</figcaption>
+							</div>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="images/자매일기b.png" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View</button>
+								</figure>
+								<figcaption>
+									<h3>자매일기</h3>
+									<span>박소영,박수영</span>
+									<div class="item-price">18,000</div>
+									<select name="bookShop" id="bookShop">
+										<option value="" disabled selected>구매가능 서점</option>
+										<option value="교보문고">교보문고</option>
+										<option value="예스24">예스24</option>
+										<option value="알라딘">알라딘</option>
+										<option value="영풍문고">영풍문고</option>
+									</select>
+								</figcaption>
+							</div>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="images/살리는 일b.png" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View</button>
+								</figure>
+								<figcaption>
+									<h3>살리는 일</h3>
+									<span>박소영</span>
+									<div class="item-price">13,500원</div>
+									<select name="bookShop" id="bookShop">
+										<option value="" disabled selected>구매가능 서점</option>
+										<option value="교보문고">교보문고</option>
+										<option value="예스24">예스24</option>
+										<option value="알라딘">알라딘</option>
+										<option value="영풍문고">영풍문고</option>
+									</select>
+								</figcaption>
+							</div>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="images/혼모노.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View</button>
+								</figure>
+								<figcaption>
+									<h3>혼모노</h3>
+									<span>성해나</span>
+									<div class="item-price">18,000원</div>
+									<select name="bookShop" id="bookShop">
+										<option value="" disabled selected>구매가능 서점</option>
+										<option value="교보문고">교보문고</option>
+										<option value="예스24">예스24</option>
+										<option value="알라딘">알라딘</option>
+										<option value="영풍문고">영풍문고</option>
+									</select>
+								</figcaption>
+							</div>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="images/쓸만한 인간.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View</button>
+								</figure>
+								<figcaption>
+									<h3>[e-book]쓸 만한 인간</h3>
+									<span>박정민</span>
+									<div class="item-price">8,520원</div>
+									<select name="bookShop" id="bookShop">
+										<option value="" disabled selected>구매가능 서점</option>
+										<option value="교보문고">교보문고</option>
+									</select>
+								</figcaption>
+							</div>
+						</div><!--grid-->
+					</div>
+				</div><!--inner-content-->
+			</div>
+		</div>
+	</section>
+
+	<section id="subscribe">
+		<div class="container">
+			<div class="row justify-content-center">
+
+				<div class="col-md-8">
+					<div class="row">
+
+						<div class="col-md-6">
+
+							<div class="title-element">
+								<h2 class="section-title divider">무제의 연재</h2>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+
+							<div class="subscribe-content" data-aos="fade-up">
+								<p>무제 대표의 포스트를 빠르게 받아보세요!
+									(비정기적으로 발신됩니다.)
+								</p>
+								<form id="form">
+									<input type="text" name="email" placeholder="이메일 주소">
+									<button class="btn-subscribe">
+										<span>send</span>
+										<i class="icon icon-send"></i>
+									</button>
+								</form>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="latest-blog" class="py-5 my-5">
+		<div class="container" style="padding: 100px 0;">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>생생한 무제의</span>
+						</div>
+						<h2 class="section-title">최신 소식</h2>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<article class="column" data-aos="fade-up">
+								<figure>
+									<a href="#" class="image-hvr-effect">
+										<img src="images/첫 여름,완주.png" alt="post" class="post-image">
+									</a>
+								</figure>
+								<div class="post-item">
+									<div class="meta-date">2025.05.09</div>
+									<h3><a href="https://www.kmib.co.kr/article/view.asp?arcid=1746600740&code=13150000&cp=nv"
+											target="_blank">[보도자료] 주인공의 내면 성장기 섬세하게 '듣는 소설'</a></h3>
+									<div class="links-element">
+										<div class="categories">News</div>
+									</div><!--links-element-->
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4">
+							<article class="column" data-aos="fade-up">
+								<figure>
+									<a href="#" class="image-hvr-effect">
+										<img src="images/김금희 작가.jpg.webp" alt="post" class="post-image">
+									</a>
+								</figure>
+								<div class="post-item">
+									<div class="meta-date">2025.05.09</div>
+									<h3><a
+											href="https://www.seoul.co.kr/news/life/publication-literature/2025/05/09/20250509024003?wlog_tag3=naver"
+											target="_blank">[보도자료] 혼자 아닌 우리... 엉망이 된 현실에서 일어서다</a></h3>
+									<div class="links-element">
+										<div class="categories">News</div>
+									</div><!--links-element-->
+								</div>
+							</article>
+						</div>
+
+						<div class="col-md-4">
+
+							<article class="column" data-aos="fade-up" data-aos-delay="200">
+								<figure>
+									<a href="#" class="image-hvr-effect">
+										<img src="images/박정민 기사사진.jpg" alt="post" class="post-image">
+									</a>
+								</figure>
+								<div class="post-item">
+									<div class="meta-date">2025.05.08</div>
+									<h3><a href="https://www.joongang.co.kr/article/25334315" target="_blank">[보도자료] 최양락 재능기부도 받았다... 박정민,
+											시각 잃은 아빠 위해 한 일</a></h3>
+
+									<div class="links-element">
+										<div class="categories">News</div>
+									</div><!--links-element-->
+
+								</div>
+							</article>
+
+						</div>
+						</article>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="btn-wrap align-center">
+						<a href="#" class="btn btn-outline-accent btn-accent-arrow" tabindex="0">Read All Articles<i
+								class="icon icon-ns-arrow-right"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<!-- 	<section id="download-app" class="leaf-pattern-overlay">
+		<div class="corner-pattern-overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="row">
+
+						<div class="col-md-5">
+							<figure>
+								<img src="images/device.png" alt="phone" class="single-image">
+							</figure>
+						</div>
+
+						<div class="col-md-7">
+							<div class="app-info">
+								<h2 class="section-title divider">Download our app now !</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus
+									liberolectus nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna.
+									Adipiscing fames semper erat ac in suspendisse iaculis.</p>
+								<div class="google-app">
+									<img src="images/google-play.jpg" alt="google play">
+									<img src="images/app-store.jpg" alt="app store">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<footer id="footer" style="background-color: #EFEFEF; padding-bottom: 30px;">
+		<div class="container">
+			<div class="row pt-5">
+
+				<div class="col">
+
+					<div class="footer-item">
+						<div class="company-brand">
+							<img src="images/main-logo.png" alt="logo" class="footer-logo">
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-2">
+
+					<div class="footer-menu">
+						<h5>About Us</h5>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="#">vision</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">articles </a>
+							</li>
+							<li class="menu-item">
+								<a href="#">careers</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">service terms</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">contact</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- / row -->
+
+			</div>
+	</footer>
+
+	<div id="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="copyright">
+						<div class="row">
+
+							<div class="col-md-6">
+								<p>&copy; 2025 출판사 무제, All rights reserved</p>
+							</div>
+
+							<div class="col-md-6">
+								<div class="social-links align-right">
+									<ul>
+										<li>
+											<a href="https://www.youtube.com/@출판사무제MUZE"><i class="fa-brands fa-youtube"></i></a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/booksmuze"><i class="fa-brands fa-instagram"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div><!--grid-->
+
+				</div><!--footer-bottom-content-->
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
